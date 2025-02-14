@@ -1,0 +1,33 @@
+#logo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px; /* Adjust for spacing from the top */
+    left: 20px; /* Adjust for spacing from the left */
+    color:6a0dad; /* Adjust to your theme */
+    margin: 0;
+  }
+body{
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text color for better readability */
+    font-family: "Arial", sans-serif; /* Fallback font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Other background options */
+body.alternate-background {
+    background-color: #ffffff; /* White background */
+}
+
+body.dark-mode {
+    background-color: #333333; /* Dark grey background */
+    color: #f0f0f0; /* Light grey text color for better readability */
+}
+
+body.blue-theme {
+    background-color: #add8e6; /* Light blue background */
+    color: #000080; /* Navy text color */
+}
+  

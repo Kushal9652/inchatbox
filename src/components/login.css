@@ -1,0 +1,366 @@
+@import url("https://fonts.googlepis.com/css?family=Montserrat:400,800");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  image-rendering: pixelated;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+}
+.container {
+  background-color: rgba(127, 181, 236, 0.8);
+  border-radius: 10px;
+  width: 828px;
+  max-width: 100%;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 14px 28px black;
+  margin-bottom: 10%;
+  margin-left:5%
+}
+.form-container {
+  position: absolute;
+  top: 0%;
+  height: 120%;
+  transition: all 0.6 ease-in-out;
+}
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+form {
+  background-color: #6a0dad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px ;
+  height: 100%;
+  text-align: center;
+}
+h1 {
+  color:  #6a0dad;
+  font-weight: bold;
+  margin: 0;
+}
+.social-container {
+  margin: 20px 0;
+}
+.social-container a {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+#fb {
+  color: rgb(79, 79, 250);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+#ins {
+  color: rgb(245, 24, 61);
+  font-size: 25px;
+  text-decoration: none;
+}
+#gm {
+  color: rgb(231, 172, 172);
+  font-size: 25px; 
+}
+#tw {
+  color: rgb(94, 94, 249);
+  font-size: 25px;
+  text-decoration: none;
+}
+input {
+  background-color: rgb(215, 210, 210);
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  margin: 8px 0px 8px -30px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  width: 135%; 
+}
+button {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(35, 144, 211, 0.5);
+  color: aqua;
+  font-size: 12px;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in;
+}
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  transition: 0.6s ease-in-out;
+}
+.overlay {
+  background-color:  #6a0dad;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(251, 251, 251));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: white;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: 0.6s ease-in-out;
+}
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  flex-direction: column;
+  transition: 0.6s ease-in-out;
+}
+.overlay-left {
+  transform: translateX(-20%);
+}
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+button:active {
+  transform: scale(0.95);
+}
+button.press {
+  background-color: transparent;
+  border-color: rgb(20, 169, 119);
+  border-width: 2px;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(35, 36, 36);
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: slide 0.6s;
+}
+@keyframes slide {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 5;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+.container.right-panel-active .overlay-left {
+  transform: translateX(0%);
+}
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+#vit {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+#signIn {
+  color: white;
+}
+#sign{
+    color:white;
+}
+#inchat{
+    color:#6a0dad;
+}
+#InChatBox{
+    color:white;
+
+}
+#form_but ::form1{
+    padding-top: 50%;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    right: 10px; /* Changed to right side */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.input-icon input {
+    padding-right: 30px; /* Adjusted padding for right icon */
+    padding-left: 15px; /* Reset left padding */
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: skyblue;
+}
+.waves {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+}
+.waves:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -100px;
+  height: 100px;
+  background: dodgerblue;
+}
+.waves svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.waves use {
+  animation: wavewave 5s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  fill: dodgerblue;
+  opacity: 0.7;
+}
+.waves.back {
+  z-index: 1;
+}
+.waves.back use:nth-child(2) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.waves.back use:nth-child(3) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+.waves.front {
+  z-index: 3;
+}
+.waves.front use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.waves.front use:nth-child(3) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+@keyframes wavewave {
+  0% {
+    transform: translate(-90px);
+  }
+  100% {
+    transform: translate(85px);
+  }
+}
+.boat {
+  position: fixed;
+  bottom: 50px;
+  left: 10vw;
+  transition: left 2s ease;
+  z-index: 2;
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: bob 4s ease-in-out alternate infinite;
+}
+.boat .hull {
+  width: 25vw;
+  height: 8.75vw;
+  background: firebrick;
+  border-radius: 0 0 12.5vw 12.5vw;
+  border-top: 0.375vw solid darkred;
+}
+.boat .sail1,
+.boat .sail2 {
+  margin-bottom: 0.25vw;
+  display: inline-block;
+}
+.boat .sail1 {
+  width: 0px;
+  border-bottom: 11.25vw solid white;
+  border-left: 10vw solid transparent;
+  margin: 0 0.625vw 0.25vw;
+}
+.boat .sail2 {
+  width: 0px;
+  border-bottom: 13.75vw solid white;
+  border-right: 12.5vw solid transparent;
+}
+@keyframes bob {
+  0% {
+    transform: rotate(-10deg) translateY(0vh);
+  }
+  100% {
+    transform: rotate(8deg) translateY(-20vh);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: skyblue;
+  }
+  .waves:after {
+    background: royalblue;
+  }
+  .waves use {
+    fill: royalblue;
+  }
+  .boat .hull {
+    background: darkred;
+    border-top-color: #600000;
+  }
+  .boat .sail1,
+  .boat .sail2 {
+    border-bottom-color: whitesmoke;
+  }
+}
