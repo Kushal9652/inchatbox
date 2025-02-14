@@ -40,7 +40,7 @@ const LoginSignup = () => {
         </svg>
       </div>
 
-      {/* Login/Signup Form */}
+
       <div className={`container ${isRightPanelActive ? "right-panel-active" : ""}`} id="container">
         <div className="form-container sign-up-container">
           <form action="#">
